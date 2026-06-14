@@ -48,10 +48,10 @@ export async function runCli() {
     process.exit(1);
   }
 
-  const success = await runValidation({
-    schemaPath,
-    envPaths,
-  });
+const success = await runValidation({
+  schemaPath: schemaPath!,
+  envPaths,
+});
 
   process.exit(success ? 0 : 1);
 }
