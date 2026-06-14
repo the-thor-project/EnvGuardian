@@ -77,7 +77,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm install -g envguardian
+      - run:  npm install -g https://registry.npmjs.org/@saarors/envguardian/-/envguardian-0.1.1.tgz
       - run: envguardian validate --schema config.schema.yml --env .env.example
 ```
 
