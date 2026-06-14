@@ -1,0 +1,19 @@
+APP_PORT:
+  type: number
+  required: true
+  min: 1024
+  max: 65535
+
+APP_ENV:
+  type: string
+  required: true
+  enum: [development, staging, production]
+
+JWT_SECRET:
+  type: string
+  required: true
+  minLength: 32
+
+ENABLE_METRICS:
+  type: boolean
+  required: false
